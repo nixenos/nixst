@@ -1,2 +1,2 @@
 # nixst
-My fork of @lukesmith's st build
+My fork of @lukesmithxyz's st build
