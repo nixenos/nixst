@@ -5,9 +5,10 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "mono:pixelsize=12:antialias=true:autohint=true";
-static char *font2[] = { "JoyPixels:pixelsize=10:antialias=true:autohint=true", "Material Design Icons:size=14", "FontAwesome:size=14" };
-static int borderpx = 2;
+// static char *font = "mono:pixelsize=14:antialias=true:autohint=true";
+static char *font = "JetBrainsMono Nerd Font:size=14:antialias=true:autohint=true";
+static char *font2[] = { "JetBrainsMono Nerd Font:size=14", "Material Design Icons:size=14", "FontAwesome:size=14" };
+static int borderpx = 4;
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -17,7 +18,7 @@ static int borderpx = 2;
  * 4: value of shell in /etc/passwd
  * 5: value of shell in config.h
  */
-static char *shell = "/bin/sh";
+static char *shell = "/bin/bash";
 char *utmp = NULL;
 /* scroll program: to enable use a string like "scroll" */
 char *scroll = NULL;
@@ -87,7 +88,7 @@ const int boxdraw_braille = 0;
 static int bellvolume = 0;
 
 /* default TERM value */
-char *termname = "st-256color";
+char *termname = "xterm-256color";
 
 /*
  * spaces per tab
@@ -107,34 +108,34 @@ char *termname = "st-256color";
 unsigned int tabspaces = 8;
 
 /* bg opacity */
-float alpha = 0.8;
+float alpha = 1;
 float alphaOffset = 0.0;
 float alphaUnfocus;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-	"#282828", /* hard contrast: #1d2021 / soft contrast: #32302f */
-	"#cc241d",
-	"#98971a",
-	"#d79921",
-	"#458588",
-	"#b16286",
-	"#689d6a",
-	"#a89984",
-	"#928374",
-	"#fb4934",
-	"#b8bb26",
-	"#fabd2f",
-	"#83a598",
-	"#d3869b",
-	"#8ec07c",
-	"#ebdbb2",
+	"#1E1E28", /* hard contrast: #1d2021 / soft contrast: #32302f */
+	"#E28C8C",
+	"#B3E1A3",
+	"#EADDA0",
+	"#A4B9EF",
+	"#C6AAE8",
+	"#9DDDCB",
+	"#D7DAE0",
+	"#1E1E28", /* hard contrast: #1d2021 / soft contrast: #32302f */
+	"#E28C8C",
+	"#B3E1A3",
+	"#EADDA0",
+	"#A4B9EF",
+	"#C6AAE8",
+	"#9DDDCB",
+	"#6E6C7C",
 	[255] = 0,
 	/* more colors can be added after 255 to use with DefaultXX */
-	"#add8e6", /* 256 -> cursor */
-	"#555555", /* 257 -> rev cursor*/
-	"#282828", /* 258 -> bg */
-	"#ebdbb2", /* 259 -> fg */
+	"#F7C196", /* 256 -> cursor */
+	"#ECBFBD", /* 257 -> rev cursor*/
+	"#1E1E28", /* 258 -> bg */
+	"#D7DAE0", /* 259 -> fg */
 };
 
 
