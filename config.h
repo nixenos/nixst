@@ -6,8 +6,8 @@
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
 // static char *font = "mono:pixelsize=14:antialias=true:autohint=true";
-static char *font = "JetBrainsMono Nerd Font:size=14:antialias=true:autohint=true";
-static char *font2[] = { "JetBrainsMono Nerd Font:size=14", "Material Design Icons:size=14", "FontAwesome:size=14" };
+static char *font = "JetBrainsMono Nerd Font:size=11:antialias=true:autohint=true";
+static char *font2[] = { "JetBrainsMono Nerd Font:size=11", "Material Design Icons:size=14", "FontAwesome:size=14" };
 static int borderpx = 4;
 
 /*
